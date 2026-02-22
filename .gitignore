@@ -1,0 +1,163 @@
+# Environment Variables (Contains API Keys, Secrets, Credentials)
+.env
+.env.local
+.env.*.local
+.env.production
+.env.backup
+
+# Docker Volumes (Contains Persistent Data/State)
+n8n_storage/
+postgres_storage/
+qdrant_storage/
+openhands_storage/
+
+# Database Files
+*.db
+*.sqlite
+*.sqlite3
+postgres_data/
+database.yml
+db.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Virtual Environments
+venv/
+ENV/
+env/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+poetry.lock
+Pipfile.lock
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-workspace
+*.sublime-project
+.project
+.pydevproject
+.settings/
+
+# Logs
+*.log
+logs/
+*.out
+nohup.out
+
+# Cache
+.cache/
+*.cache
+.pytest_cache/
+.ruff_cache/
+
+# Node modules (if any n8n custom nodes/extensions)
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# OS Files
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Temporary Files
+*.tmp
+*.temp
+*.bak
+*.backup
+*~
+*.swp
+*.swo
+temp/
+tmp/
+
+# Secrets & Credentials
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+secrets/
+credentials/
+private_key*
+secret_key*
+
+# N8N Specific Files
+.n8n/
+n8n_sessions/
+n8n_credentials.json
+n8n.db
+executions/
+
+# OpenHands Specific Files  
+.openhands/cache/
+.openhands/logs/
+.openhands/.env
+.openhands/plugins/
+openhands_cache/
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+Dockerfile.dev
+
+# Git
+.gitkeep
+
+# IDE Generated Files
+*.iml
+.gradle/
+.gradle
+gradlew
+gradlew.bat
+local.properties
+
+# VS Code
+.vscode/settings.json
+.vscode/launch.json
+
+# Keep these files tracked (safe):
+# - docker-compose.yml (references env vars, no secrets embedded)
+# - .env.example (template with placeholder values only)
+# - n8n/demo-data/ (example workflows, anonymized)
+# - start.sh, stop.sh, switch-model.sh (utility scripts)
+# - README.md, CONTRIBUTING.md (documentation)
+# - LICENSE (license file)
+# - shared/ (shared utilities, no secrets)
+# - assets/ (static files)
