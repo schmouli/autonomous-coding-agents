@@ -477,9 +477,13 @@ Switch between local and cloud LLM models.
 
 ---
 
-## 🤝 For Contributors
+## 🙏 Credits
 
-To contribute infrastructure improvements:
+Built on top of [n8n Self-Hosted AI Starter Kit](https://github.com/n8n-io/self-hosted-ai-starter-kit).
+
+Modified and extended by [@schmouli](https://github.com/schmouli) to create a specialized autonomous coding agents infrastructure.
+
+---
 
 1. Fork repository
 2. Create feature branch
