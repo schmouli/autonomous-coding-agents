@@ -9,13 +9,13 @@ set -a; source .env; set +a
 MODE=${1:-local}
 
 if [ "$MODE" = "cloud" ]; then
-  echo "→ Switching to Ollama cloud (qwen3-coder-next)..."
+  echo "→ Switching to Ollama cloud (qwen3-coder:480b-cloud)..."
   docker compose stop openhands
-  LLM_MODEL=openai/qwen3-coder-next \
+  LLM_MODEL=openai/qwen3-coder:480b-cloud \
   LLM_API_KEY="$OLLAMA_API_KEY" \
   LLM_BASE_URL=https://ollama.com/api \
   docker compose up -d openhands
-  echo "✅ OpenHands → qwen3-coder-next (Ollama cloud)"
+  echo "✅ OpenHands → qwen3-coder:480b-cloud (Ollama cloud)"
 elif [ "$MODE" = "local" ]; then
   echo "→ Switching to local (qwen2.5-coder:7b)..."
   docker compose stop openhands

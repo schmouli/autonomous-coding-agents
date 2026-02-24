@@ -16,7 +16,7 @@ This repository contains the Docker Compose setup, n8n workflows, and OpenHands 
 - Access to Docker socket for spawning isolated test containers
 - LLM:
   - Local: qwen2.5-coder:7b (via Ollama at localhost:11434)
-  - Cloud: qwen3-coder-next (via Ollama cloud API with OLLAMA_API_KEY)
+  - Cloud: qwen3-coder:480b-cloud (via Ollama cloud API with OLLAMA_API_KEY)
 
 ### n8n (Port 5678)
 **Workflow Automation & Orchestration**
@@ -352,7 +352,7 @@ ollama serve
 
 ```bash
 # .env
-LLM_MODEL=openai/qwen3-coder-next
+LLM_MODEL=openai/qwen3-coder:480b-cloud
 LLM_API_KEY=your-ollama-cloud-api-key
 LLM_BASE_URL=https://ollama.com/api
 ```
@@ -363,7 +363,7 @@ Get API key from: https://ollama.com
 
 ```bash
 ./switch-model.sh local    # Use local qwen2.5-7b (fast)
-./switch-model.sh cloud    # Use cloud qwen3-coder-next (advanced)
+./switch-model.sh cloud    # Use cloud qwen3-coder:480b-cloud (advanced)
 ```
 
 ---
