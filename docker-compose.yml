@@ -112,13 +112,13 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - openhands_storage:/.openhands
-      - /home/mouli/projects/onlendhub:/workspace
+      - /home/mouli/projects/mortgage-uw:/workspace
     environment:
       - LLM_MODEL=${LLM_MODEL:-openai/qwen2.5-coder:7b}
       - LLM_API_KEY=${LLM_API_KEY:-ollama}
       - LLM_BASE_URL=${LLM_BASE_URL:-http://host.docker.internal:11434/v1}
-      - SANDBOX_VOLUMES=/home/mouli/projects/onlendhub:/workspace:rw
-      - WORKSPACE_BASE=/home/mouli/projects/onlendhub
+      - SANDBOX_VOLUMES=/home/mouli/projects/mortgage-uw:/workspace:rw
+      - WORKSPACE_BASE=/home/mouli/projects/mortgage-uw
       - SANDBOX_VSCODE_PORT=41234
       - SANDBOX_USE_HOST_NETWORK=true        
       - SANDBOX_CONVERSATION_BASE_DIR=/tmp/conversations   

@@ -4,7 +4,7 @@ PROJECT_DIR="$(cd "$(dirname "$0")" && pwd)"
 cd "$PROJECT_DIR"
 
 echo "──────────────────────────────────────────"
-echo "  OnLendHub Autonomous Coding Stack"
+echo "  mortgage-uw Autonomous Coding Stack"
 echo "──────────────────────────────────────────"
 
 # Load .env to get PROJECT_PATH and OLLAMA_API_KEY
@@ -67,7 +67,7 @@ if [ ! -d "$PROJECT_PATH/.openhands/skills" ]; then
   mkdir -p "$PROJECT_PATH/.openhands/skills"
   cat > "$PROJECT_PATH/.openhands/skills/repo.md" << 'SKILL'
 ---
-name: OnLendHubRepo
+name: mortgage-uwRepo
 type: repo
 ---
 Stack: FastAPI, SQLAlchemy, Alembic, PostgreSQL, Docker

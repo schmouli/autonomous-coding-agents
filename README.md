@@ -281,7 +281,7 @@ OpenHands mounts your project at `/workspace`:
 
 ```bash
 # In .env
-PROJECT_PATH=/home/mouli/projects/onlendhub
+PROJECT_PATH=/home/mouli/projects/mortgage-uw
 
 # Inside OpenHands container
 # Files appear at: /workspace
